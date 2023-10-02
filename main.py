@@ -5,5 +5,9 @@ print("he world")
 print("helloworld")
 print("bye pycharm")
 
+
 def hello():
     pass
+
+
+print("hello")

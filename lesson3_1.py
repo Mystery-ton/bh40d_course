@@ -3,7 +3,7 @@
 sentence = input("Enter your sentence: ")
 
 
-# print(sentence.replace(" ", "-", 3))
+print(sentence.replace(" ", "-"))
 
 sentence_list = sentence.split(" ")
 print(sentence_list)

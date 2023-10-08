@@ -5,9 +5,9 @@ name = input("Enter name: ")
 age = int(input("Enter age: "))
 city = input("Enter city: ")
 
-print(
-    "Hello, {name} from {city}. You are {age}!!!".format(name=name, age=age, city=city)
-)
+text = "Hello, {name} from {city}. You are {age}!!!"
+
+print(text.format(name=name, age=age, city=city))
 
 print(f"Hello, {name} from {city}. You are {age}!!!")
 

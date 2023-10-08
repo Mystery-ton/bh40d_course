@@ -11,4 +11,7 @@ print(
 
 print(f"Hello, {name} from {city}. You are {age}!!!")
 
-print("Hello, %s from %s. You are %d!!!" % (name, city, age))
+print(
+    "Hello, %(fname)s from %(user_city)s. You are %(user_age)d!!!"
+    % {"fname": name, "user_city": city, "user_age": age}
+)

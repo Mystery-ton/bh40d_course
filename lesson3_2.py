@@ -5,6 +5,6 @@ str_numbers_list = str_numbers.split()
 first = float(str_numbers_list[0])
 second = float(str_numbers_list[1])
 third = float(str_numbers_list[2])
-avg = (first + second + third) / str_numbers_list.__len__()
+avg = (first + second + third) / 3
 avg_round = round(avg, 3)
 print(f"{avg_round} is average")

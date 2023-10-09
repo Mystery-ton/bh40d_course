@@ -22,3 +22,13 @@ c_is_negative = c > 0
 pos_count = a_is_positive + b_is_positive + c_is_positive
 neg_count = a_is_negative + b_is_negative + c_is_negative
 print(f"Negative: {neg_count}; Positive: {pos_count}")
+
+text = input("Enter text: ")
+result = [text[i] * 3 for i in range(len(text))]
+print(result)
+
+
+res_dict = {i: ord(i) for i in text}
+c = sum(res_dict.values())
+print(res_dict)
+print(c)

@@ -1,4 +1,4 @@
-amount_of_numbers = int(input("Enter amount of nubers: "))
+amount_of_numbers = int(input("Enter amount of numbers: "))
 multipl_number = int(input("Enter number: "))
 min_number = int(input("Enter minimal number: "))
 i = 0

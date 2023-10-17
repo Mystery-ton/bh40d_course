@@ -8,7 +8,7 @@ azbuka_morze = {"a": ".-", "b": "-...", "c": "-.-.", " ": " "}
 def translate(text):
     res_list = []
     for i in text:
-        res_list.append(azbuka_morze[i])
+        res_list.append(azbuka_morze.get(i))
     res = " ".join(res_list)
     return res
 

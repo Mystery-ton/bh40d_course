@@ -37,8 +37,58 @@
 
 # enumerate() возвращает кортеж с индексом и значением из списка например, индекс доставали в i , а значение в val.
 
-data = [{"name": "a", "age": 34}, {"name": "b", "age": 40}, {"name": "c", "age": 10}]
+# data = [{"name": "a", "age": 34}, {"name": "b", "age": 40}, {"name": "c", "age": 10}]
+#
+# data.sort(key=lambda x: x.get("age"), reverse=True)
+# print(min(data, key=lambda x: x.get("age")))
+# print(data)
 
-data.sort(key=lambda x: x.get("age"), reverse=True)
-print(min(data, key=lambda x: x.get("age")))
-print(data)
+
+# def step_gen(number, start, end):
+#     for i in range(start, end + 1):
+#         yield pow(number, i)
+#
+#
+# for i in step_gen(2, 3, 6):
+#     print(i)
+
+# words = ["adg", "Erbgb", "Gvbg", "efvs"]
+# words.sort(key=str.lower())
+# #words.sort(key=lambda x: x.lower())
+# print(words)
+
+
+# objs = ["iu", "wdicodwcdw", "oijion", "anton", "operator"]
+#
+# def paginator(objs, page, paginate_by):
+#     return objs[page * paginate_by - paginate_by : page * paginate_by]
+# print(paginator(objs, 2, 2))
+
+
+# def min_divisor(num):
+#     for i in range(2, num+1):
+#         if not num % i:
+#             return i
+#
+# print(min_divisor(1131))
+
+# text = "asdJHHbPOo"
+
+
+# def upper_count(text):
+#     counter = 0
+#     for i in text:
+#         if i.isupper():
+#             counter += 1
+#     return counter
+#
+#
+# print(upper_count(text))
+
+
+# def factorial(number):
+#     if number > 1:
+#         return number * factorial(number - 1)
+#     return number
+#
+# print(factorial(5))

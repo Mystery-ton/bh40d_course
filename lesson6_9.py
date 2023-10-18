@@ -15,13 +15,16 @@ data = {
 }
 
 
-def no_email(data):
-    for i in data:
+def no_email(data: dict[str, dict[str, str]]) -> list[str]:
+    res = []
+    for i in data.values():  # type: dict[str,str]
         if not (
-            (("mail", "") in list(data[i].items())) or "mail" in list(data[i].keys())
+            # (("mail", "") in list(data[i].items())) or "mail" in list(data[i].keys())
+            i.get("mail")
         ):
-            print(data[i]["name"])
-        print(list(data[i].items()))
+            res.append(i.get("name"))
+        # print(list(data[i].items()))
+    return res
 
 
-no_email(data)
+print(no_email(data))

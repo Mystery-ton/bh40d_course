@@ -16,3 +16,8 @@ def str_only(data_list):
 
 data = [1, 54, "eree", "1111", {1, 4}]
 print(str_only(data))
+
+result = list(filter(lambda x: isinstance(x, str), data))
+print(result)
+
+# в вайл оставаться на том же индексе, чтобвы не пропускать значения после удаления

@@ -16,8 +16,10 @@ class Taxi:
 
     def find_car(self, count_passengers: int, is_baby: bool):
         for i in self.cars:
-            if count_passengers <= i.count_passenger_seats and (
-                is_baby == i.is_baby_seat or is_baby == False
+            if (
+                not i.is_busy
+                and count_passengers <= i.count_passenger_seats
+                and (is_baby == i.is_baby_seat or is_baby is False)
             ):
                 i.is_busy = True
                 return i

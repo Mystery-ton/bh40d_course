@@ -28,4 +28,4 @@ class Car:
 
 
 # car1 = Car(color="red", count_passenger_seats=5, is_baby_seat=True)
-# print(car1.__str__())
+# print(car1)

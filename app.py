@@ -156,62 +156,67 @@
 # int.bit_count()
 
 
-class Product:
-    """Класс представления товара"""
+# class Product:
+#     """Класс представления товара"""
+#
+#     def __init__(self, name: str, descr: str, price: float | int):
+#         """Object atributes initialization
+#
+#         :param name: Название товара
+#         :param descr: Описание товара
+#         :param price: Цена товара
+#         """
+#         if not isinstance(name, str):
+#             raise ValueError
+#         if not isinstance(descr, str):
+#             raise ValueError
+#         if not isinstance(price, (float, int)):
+#             raise TypeError
+#         if price < 0:
+#             raise ValueError
+#
+#         self.name = name
+#         self.descr = descr
+#         self.price = price
+#
+#     def dump(self):
+#         """Сериализация объекта
+#
+#         :return: Словарь с данными объекта
+#         """
+#         return {"name": self.name, "descr": self.descr, "price": self.price}
+#
+#     def __str__(self) -> str:
+#         return f"{self.name},{self.price},{self.descr}"
+#
+#     # def __bool__(self):
+#     #     return bool(self.price)
+#
+#     def __len__(self):
+#         return round(self.price)
+#
+#     def __getitem__(self, item):
+#         return self.name[item]
+#
+#     def iter(self):
+#         return self
+#
+#     def __next__(self):
+#         self.i+=1
+#         if self.i<len(self.name):
+#             return self.name[self.i]
+#         else:
+#             self.i =-1
+#             raise StopIteration
+#
+#     def __eq__(self, other):
+#         if isinstance(other, Product):
+#             return self.price == other.price
+#         elif isinstance(other, (int, float)):
+#             return self.price == other
+#         raise TypeError
 
-    def __init__(self, name: str, descr: str, price: float | int):
-        """Object atributes initialization
-
-        :param name: Название товара
-        :param descr: Описание товара
-        :param price: Цена товара
-        """
-        if not isinstance(name, str):
-            raise ValueError
-        if not isinstance(descr, str):
-            raise ValueError
-        if not isinstance(price, (float, int)):
-            raise TypeError
-        if price < 0:
-            raise ValueError
-
-        self.name = name
-        self.descr = descr
-        self.price = price
-
-    def dump(self):
-        """Сериализация объекта
-
-        :return: Словарь с данными объекта
-        """
-        return {"name": self.name, "descr": self.descr, "price": self.price}
-
-    def __str__(self) -> str:
-        return f"{self.name},{self.price},{self.descr}"
-
-    # def __bool__(self):
-    #     return bool(self.price)
-
-    def __len__(self):
-        return round(self.price)
-
-    def __getitem__(self, item):
-        return self.name[item]
-
-    # def iter(self):
-    #     return self
-    #
-    # def __next__(self):
-    #     self.i+=1
-    #     if self.i<len(self.name):
-    #         return self.name[self.i]
-    #     else:
-    #         self.i =-1
-    #         raise StopIteration
-
-    def __eq__(self, other):
-        if isinstance(other, Product):
-            return self.price == other.price
-        elif isinstance(other, (int, float)):
-            return self.price == other
-        raise TypeError
+# with (
+#     open("")
+#     open("")
+# ):
